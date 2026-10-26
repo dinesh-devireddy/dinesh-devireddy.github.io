@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dinesh Kumar D · Backend &amp; AI Engineer</title>
+  <meta name="description" content="Software Engineer with 5 years building scalable backend systems, AI-powered applications and distributed enterprise solutions.">
+  <meta property="og:title" content="Dinesh Kumar D · Backend & AI Engineer">
+  <meta property="og:description" content="Backend and AI engineering: Java, Spring Boot, Kafka, LLMs, LangGraph.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234f46e5'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='16' font-weight='700' text-anchor='middle' fill='white'%3ED%3C/text%3E%3C/svg%3E">
+
+  <script>
+    // Apply saved/system theme before paint to avoid a flash.
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'dark' || (!t && matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      }
+    } catch (e) {}
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { colors: { primary: 'rgb(var(--primary-rgb) / <alpha-value>)' }, fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'] } } }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    :root { --primary-rgb: 43 141 238; }   /* #2b8dee */
+    .dark { --primary-rgb: 17 115 212; }  /* #1173d4 */
+    section[id] { scroll-margin-top: 5rem; }
+    details > summary { list-style: none; }
+    details > summary::-webkit-details-marker { display: none; }
+    details[open] .chev { transform: rotate(180deg); }
+    @media print { header, .no-print { display: none !important; } }
+  </style>
+</head>
+<body class="bg-white text-slate-700 antialiased dark:bg-slate-950 dark:text-slate-300 font-sans">
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-20 border-b border-slate-200/70 bg-white/80 backdrop-blur dark:border-slate-800 dark:bg-slate-950/80">
+    <div class="mx-auto flex max-w-3xl items-center justify-between px-5 py-3">
+      <a href="#top" class="font-semibold text-slate-900 dark:text-white">Dinesh</a>
+      <nav class="hidden items-center gap-1 text-sm sm:flex" aria-label="Sections">
+        <a data-nav href="#about" class="rounded-md px-3 py-1.5 hover:bg-slate-100 dark:hover:bg-slate-800">About</a>
+        <a data-nav href="#work" class="rounded-md px-3 py-1.5 hover:bg-slate-100 dark:hover:bg-slate-800">Work</a>
+        <a data-nav href="#experience" class="rounded-md px-3 py-1.5 hover:bg-slate-100 dark:hover:bg-slate-800">Experience</a>
+        <a data-nav href="#skills" class="rounded-md px-3 py-1.5 hover:bg-slate-100 dark:hover:bg-slate-800">Skills</a>
+        <a data-nav href="#contact" class="rounded-md px-3 py-1.5 hover:bg-slate-100 dark:hover:bg-slate-800">Contact</a>
+      </nav>
+      <button id="theme" type="button" aria-label="Toggle dark mode"
+        class="rounded-md p-2 hover:bg-slate-100 dark:hover:bg-slate-800">
+        <i data-lucide="sun" class="hidden h-5 w-5 dark:block"></i>
+        <i data-lucide="moon" class="h-5 w-5 dark:hidden"></i>
+      </button>
+    </div>
+  </header>
+
+  <main id="top" class="mx-auto max-w-3xl space-y-20 px-5 py-14">
+
+    <!-- Hero -->
+    <section class="space-y-6">
+      <p class="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary ">
+        <i data-lucide="code-2" class="h-4 w-4"></i> Software Engineer
+      </p>
+      <h1 class="text-4xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-5xl">Dinesh Kumar D</h1>
+      <p class="text-xl text-slate-600 dark:text-slate-400">Backend, Distributed Systems &amp; AI Engineer</p>
+      <p class="max-w-2xl text-lg leading-relaxed">
+        I build scalable backend systems, event-driven microservices and AI-powered applications, with an emphasis on reliable execution, human oversight and fault-tolerant design.
+      </p>
+      <div class="flex flex-wrap gap-3 pt-1">
+        <a href="#work" class="inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2.5 text-sm font-medium text-white hover:opacity-90">
+          <i data-lucide="briefcase" class="h-4 w-4"></i> See my work
+        </a>
+        <a href="#contact" class="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-4 py-2.5 text-sm font-medium text-slate-800 hover:bg-slate-50 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-900">
+          <i data-lucide="mail" class="h-4 w-4"></i> Get in touch
+        </a>
+      </div>
+      <div class="flex gap-2 pt-1">
+        <a href="https://github.com/dinesh-devireddy" target="_blank" rel="noopener" aria-label="GitHub" class="rounded-md p-2 hover:bg-slate-100 dark:hover:bg-slate-800"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.11 3.04.74.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg></a>
+        <a href="https://www.linkedin.com/in/dineshkumard/" target="_blank" rel="noopener" aria-label="LinkedIn" class="rounded-md p-2 hover:bg-slate-100 dark:hover:bg-slate-800"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg></a>
+      </div>
+    </section>
+
+    <!-- Quick facts -->
+    <section class="grid grid-cols-3 gap-3 text-center" aria-label="At a glance">
+      <div class="rounded-xl border border-slate-200 p-4 dark:border-slate-800">
+        <p class="text-2xl font-bold text-slate-900 dark:text-white">5</p>
+        <p class="text-xs text-slate-500 dark:text-slate-400">years building software</p>
+      </div>
+      <div class="rounded-xl border border-slate-200 p-4 dark:border-slate-800">
+        <p class="text-2xl font-bold text-slate-900 dark:text-white">80%</p>
+        <p class="text-xs text-slate-500 dark:text-slate-400">less manual test scripting with AI</p>
+      </div>
+      <div class="rounded-xl border border-slate-200 p-4 dark:border-slate-800">
+        <p class="text-2xl font-bold text-slate-900 dark:text-white">70+</p>
+        <p class="text-xs text-slate-500 dark:text-slate-400">rules in a multi-tenant rule engine</p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="space-y-4">
+      <h2 class="flex items-center gap-2 text-2xl font-semibold text-slate-900 dark:text-white"><i data-lucide="user" class="h-6 w-6 text-primary "></i> About</h2>
+      <p class="leading-relaxed">
+        Software Engineer with 5 years of experience developing scalable backend systems, AI-powered applications and distributed enterprise solutions at DBS Tech India. My core is Java, Spring Boot and event-driven microservices built on Kafka and RabbitMQ.
+      </p>
+      <p class="leading-relaxed">
+        I work hands-on with Generative AI: LLM integration, prompt orchestration and agentic workflows in Python and LangGraph, designed for reliable execution, human-in-the-loop oversight and fault-tolerant recovery.
+      </p>
+    </section>
+
+    <!-- Featured work -->
+    <section id="work" class="space-y-6">
+      <h2 class="flex items-center gap-2 text-2xl font-semibold text-slate-900 dark:text-white"><i data-lucide="rocket" class="h-6 w-6 text-primary "></i> Featured work</h2>
+
+      <article class="rounded-2xl border border-slate-200 p-6 dark:border-slate-800">
+        <div class="mb-3 flex items-center gap-3">
+          <span class="rounded-lg bg-primary/10 p-2 text-primary "><i data-lucide="bot" class="h-5 w-5"></i></span>
+          <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Agentic SDLC Orchestrator</h3>
+        </div>
+        <p class="leading-relaxed">A seven-role agentic workflow in LangGraph that orchestrates requirement analysis, planning, impact assessment, implementation, testing, security review and documentation, with controlled and recoverable code generation.</p>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li class="flex gap-2"><i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-emerald-600"></i> Human-in-the-loop approval gates, hash-bound patch validation, persistent checkpoints, bounded retries and automated rollback.</li>
+          <li class="flex gap-2"><i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-emerald-600"></i> Parallel validation workflows plus a URL-shortener reference app, verified with 40 concurrent redirects and persistent click analytics.</li>
+          <li class="flex gap-2"><i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-emerald-600"></i> 93 automated tests and six offline demo scenarios covering clarification, repair loops and failure recovery.</li>
+        </ul>
+        <div class="mt-4 flex flex-wrap gap-2 text-xs">
+          <span class="rounded-md bg-slate-100 px-2 py-1 dark:bg-slate-800">Python</span><span class="rounded-md bg-slate-100 px-2 py-1 dark:bg-slate-800">LangGraph</span><span class="rounded-md bg-slate-100 px-2 py-1 dark:bg-slate-800">Pydantic</span><span class="rounded-md bg-slate-100 px-2 py-1 dark:bg-slate-800">FastAPI</span><span class="rounded-md bg-slate-100 px-2 py-1 dark:bg-slate-800">SQLite</span><span class="rounded-md bg-slate-100 px-2 py-1 dark:bg-slate-800">Streamlit</span>
+        </div>
+      </article>
+
+      <article class="rounded-2xl border border-slate-200 p-6 dark:border-slate-800">
+        <div class="mb-3 flex items-center gap-3">
+          <span class="rounded-lg bg-primary/10 p-2 text-primary "><i data-lucide="flask-conical" class="h-5 w-5"></i></span>
+          <h3 class="text-lg font-semibold text-slate-900 dark:text-white">AI-Powered Test Automation &amp; Advisory Intelligence</h3>
+        </div>
+        <p class="leading-relaxed">LLM-driven tooling at DBS that generates executable test scripts from acceptance criteria and contextual profile insights for advisory applications.</p>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li class="flex gap-2"><i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-emerald-600"></i> Claude Sonnet 3.5 turns acceptance criteria into executable tests, cutting manual scripting by 80% and overall testing time by 60%.</li>
+          <li class="flex gap-2"><i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-emerald-600"></i> Prompt orchestration and API integrations generate profile insights, improving relevance scores by 70% on internal benchmarks.</li>
+        </ul>
+        <div class="mt-4 flex flex-wrap gap-2 text-xs">
+          <span class="rounded-md bg-slate-100 px-2 py-1 dark:bg-slate-800">Claude Sonnet 3.5</span><span class="rounded-md bg-slate-100 px-2 py-1 dark:bg-slate-800">Prompt Orchestration</span><span class="rounded-md bg-slate-100 px-2 py-1 dark:bg-slate-800">LLM Integration</span><span class="rounded-md bg-slate-100 px-2 py-1 dark:bg-slate-800">Java</span><span class="rounded-md bg-slate-100 px-2 py-1 dark:bg-slate-800">Spring Boot</span>
+        </div>
+      </article>
+
+      <article class="rounded-2xl border border-slate-200 p-6 dark:border-slate-800">
+        <div class="mb-3 flex items-center gap-3">
+          <span class="rounded-lg bg-primary/10 p-2 text-primary "><i data-lucide="workflow" class="h-5 w-5"></i></span>
+          <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Configurable Rule Engine &amp; Event-Driven Services</h3>
+        </div>
+        <p class="leading-relaxed">A configurable rule engine and Kafka-driven asynchronous workflows that keep data-intensive advisory services decoupled, responsive and scalable.</p>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li class="flex gap-2"><i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-emerald-600"></i> Strategy and Composite design patterns support 70+ business rules across multi-tenant, multi-region environments.</li>
+          <li class="flex gap-2"><i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-emerald-600"></i> Kafka-based asynchronous microservice workflows decouple services for data-intensive operations.</li>
+          <li class="flex gap-2"><i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-emerald-600"></i> JPA/Hibernate tuning with pagination and batching, plus reusable Micro Frontend components shared across apps.</li>
+        </ul>
+        <div class="mt-4 flex flex-wrap gap-2 text-xs">
+          <span class="rounded-md bg-slate-100 px-2 py-1 dark:bg-slate-800">Java</span><span class="rounded-md bg-slate-100 px-2 py-1 dark:bg-slate-800">Spring Boot</span><span class="rounded-md bg-slate-100 px-2 py-1 dark:bg-slate-800">Apache Kafka</span><span class="rounded-md bg-slate-100 px-2 py-1 dark:bg-slate-800">Hibernate</span><span class="rounded-md bg-slate-100 px-2 py-1 dark:bg-slate-800">Micro Frontends</span>
+        </div>
+      </article>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="space-y-6">
+      <div class="flex items-end justify-between">
+        <h2 class="flex items-center gap-2 text-2xl font-semibold text-slate-900 dark:text-white"><i data-lucide="history" class="h-6 w-6 text-primary "></i> Experience</h2>
+        <button id="toggle-all" type="button" class="no-print text-sm text-primary hover:underline ">Expand all</button>
+      </div>
+
+      <div class="space-y-3">
+        <details open class="group rounded-xl border border-slate-200 dark:border-slate-800">
+          <summary class="flex cursor-pointer items-center justify-between gap-4 p-5">
+            <div>
+              <h3 class="font-semibold text-slate-900 dark:text-white">Associate Software Engineer · DBS Tech India</h3>
+              <p class="text-sm text-slate-500 dark:text-slate-400">Apr 2025 – Present · Hyderabad</p>
+            </div>
+            <i data-lucide="chevron-down" class="chev h-5 w-5 shrink-0 transition-transform"></i>
+          </summary>
+          <div class="space-y-3 px-5 pb-5 text-sm leading-relaxed">
+            <p>Builds AI-powered tooling and event-driven backend services for advisory applications.</p>
+            <ul class="list-disc space-y-1 pl-5">
+              <li><strong>AI test automation</strong> with Claude Sonnet 3.5: 80% less manual scripting, 60% faster testing.</li>
+              <li><strong>LLM advisory intelligence</strong> via prompt orchestration: 70% better insight relevance.</li>
+              <li><strong>Configurable rule engine</strong> in Java/Spring Boot supporting 70+ rules across tenants and regions.</li>
+              <li>Kafka-driven async microservices, JPA/Hibernate optimisation and reusable Micro Frontend components.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="group rounded-xl border border-slate-200 dark:border-slate-800">
+          <summary class="flex cursor-pointer items-center justify-between gap-4 p-5">
+            <div>
+              <h3 class="font-semibold text-slate-900 dark:text-white">Analyst · DBS Tech India</h3>
+              <p class="text-sm text-slate-500 dark:text-slate-400">Aug 2022 – Mar 2025 · Hyderabad</p>
+            </div>
+            <i data-lucide="chevron-down" class="chev h-5 w-5 shrink-0 transition-transform"></i>
+          </summary>
+          <div class="space-y-3 px-5 pb-5 text-sm leading-relaxed">
+            <p>Java and Spring Boot microservices for enterprise payment processing, insurance data ingestion and high-volume batch operations.</p>
+            <ul class="list-disc space-y-1 pl-5">
+              <li>RabbitMQ-based asynchronous processing to absorb workload spikes without blocking upstream services.</li>
+              <li>Backend workflows for insurance records and images using MySQL and AWS S3.</li>
+              <li>Contributed to migrating an enterprise application from Angular to React.</li>
+              <li>Automated batch processing, Excel reporting and vendor distribution; streamlined Jenkins CI/CD with DevOps.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="group rounded-xl border border-slate-200 dark:border-slate-800">
+          <summary class="flex cursor-pointer items-center justify-between gap-4 p-5">
+            <div>
+              <h3 class="font-semibold text-slate-900 dark:text-white">Senior Officer · DBS Tech India</h3>
+              <p class="text-sm text-slate-500 dark:text-slate-400">Nov 2021 – Jul 2022 · Hyderabad</p>
+            </div>
+            <i data-lucide="chevron-down" class="chev h-5 w-5 shrink-0 transition-transform"></i>
+          </summary>
+          <div class="space-y-3 px-5 pb-5 text-sm leading-relaxed">
+            <p>High-throughput Java microservices processing large vendor datasets and transactional records.</p>
+            <ul class="list-disc space-y-1 pl-5">
+              <li>Batch workflows automating data extraction, transformation and file generation for downstream systems.</li>
+              <li>AWS S3 and secure SFTP transfers for reliable, traceable data exchange with external vendors.</li>
+              <li>Async processing and retry mechanisms to improve batch reliability, with monitoring of scheduled jobs.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="space-y-6">
+      <h2 class="flex items-center gap-2 text-2xl font-semibold text-slate-900 dark:text-white"><i data-lucide="wrench" class="h-6 w-6 text-primary "></i> Skills</h2>
+      <div class="grid gap-4 sm:grid-cols-2" id="skill-grid"></div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="space-y-6">
+      <h2 class="flex items-center gap-2 text-2xl font-semibold text-slate-900 dark:text-white"><i data-lucide="graduation-cap" class="h-6 w-6 text-primary "></i> Education</h2>
+      <div class="rounded-xl border border-slate-200 p-5 dark:border-slate-800">
+        <h3 class="font-semibold text-slate-900 dark:text-white">B.Tech, Computer Science and Engineering</h3>
+        <p class="text-sm text-slate-500 dark:text-slate-400">KL University, Guntur, Andhra Pradesh · 2021</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="space-y-5 rounded-2xl bg-slate-50 p-8 dark:bg-slate-900">
+      <h2 class="flex items-center gap-2 text-2xl font-semibold text-slate-900 dark:text-white"><i data-lucide="send" class="h-6 w-6 text-primary "></i> Let's talk</h2>
+      <p>Open to interesting backend, distributed systems and AI engineering work. The best way to reach me is email or LinkedIn.</p>
+      <div class="flex flex-wrap gap-3">
+        <a href="mailto:dineshkumardevireddy@gmail.com" class="inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2.5 text-sm font-medium text-white hover:opacity-90"><i data-lucide="mail" class="h-4 w-4"></i> dineshkumardevireddy@gmail.com</a>
+        <a href="https://www.linkedin.com/in/dineshkumard/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-4 py-2.5 text-sm font-medium text-slate-800 hover:bg-white dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg> LinkedIn</a>
+        <a href="https://github.com/dinesh-devireddy" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-4 py-2.5 text-sm font-medium text-slate-800 hover:bg-white dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.11 3.04.74.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg> GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200 py-8 text-center text-sm text-slate-500 dark:border-slate-800 dark:text-slate-400">
+    © <span id="year"></span> Dinesh Kumar D
+  </footer>
+
+  <script>
+    // Skills data -> chips grouped by domain
+    const skills = [
+      ['server', 'Backend & frameworks', ['Java', 'Python', 'SQL', 'Spring Boot', 'FastAPI', 'Spring Data JPA', 'Hibernate', 'REST APIs', 'Microservices']],
+      ['brain-circuit', 'AI & agentic systems', ['Claude Sonnet 3.5', 'LLM Integration', 'Prompt Engineering', 'Prompt Orchestration', 'LangGraph', 'Pydantic', 'Human-in-the-Loop']],
+      ['network', 'Distributed systems', ['Apache Kafka', 'RabbitMQ', 'Event-Driven Architecture', 'Async Processing', 'Batch Processing']],
+      ['database', 'Databases & cloud', ['MySQL', 'SQLite', 'AWS S3']],
+      ['layout-dashboard', 'Frontend & DevOps', ['React', 'JavaScript', 'Streamlit', 'Micro Frontends', 'Jenkins', 'CI/CD', 'Git', 'SFTP']],
+      ['blocks', 'Core engineering', ['System Design', 'Design Patterns', 'Multi-Tenant Architecture']],
+    ];
+    document.getElementById('skill-grid').innerHTML = skills.map(([icon, title, items]) => `
+      <div class="rounded-xl border border-slate-200 p-5 dark:border-slate-800">
+        <h3 class="mb-3 flex items-center gap-2 font-semibold text-slate-900 dark:text-white">
+          <i data-lucide="${icon}" class="h-4 w-4 text-primary "></i>${title}
+        </h3>
+        <div class="flex flex-wrap gap-2 text-xs">
+          ${items.map(s => `<span class="rounded-md bg-slate-100 px-2 py-1 dark:bg-slate-800">${s}</span>`).join('')}
+        </div>
+      </div>`).join('');
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+    lucide.createIcons();
+
+    // Theme toggle
+    document.getElementById('theme').addEventListener('click', () => {
+      const dark = document.documentElement.classList.toggle('dark');
+      try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch (e) {}
+    });
+
+    // Expand / collapse all experience entries
+    const toggle = document.getElementById('toggle-all');
+    toggle.addEventListener('click', () => {
+      const items = document.querySelectorAll('#experience details');
+      const open = toggle.textContent === 'Expand all';
+      items.forEach(d => d.open = open);
+      toggle.textContent = open ? 'Collapse all' : 'Expand all';
+    });
+
+    // Highlight current section in nav
+    const links = [...document.querySelectorAll('[data-nav]')];
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        links.forEach(a => {
+          const on = a.getAttribute('href') === '#' + e.target.id;
+          a.classList.toggle('text-primary', on);
+          a.classList.toggle('font-medium', on);
+        });
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    links.forEach(a => { const s = document.querySelector(a.getAttribute('href')); if (s) io.observe(s); });
+  </script>
+</body>
+</html>
